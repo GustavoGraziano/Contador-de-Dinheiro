@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/845ff96034.js" crossorigin="anonymous"></script>
+        <title>Contador de Dinheiro</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <img src="img/logo.png" class="img">
+                    <h1 class="text">Contador de Dinheiro</h1>
+                </div>
+            </header>
+            <main class="main">
+                <section class="calculate">
+                    <ul class="input-list" id="input-list">
+                        <li class="input-group">
+                            <span class="currency-ref">R$</span>
+                            <input type="text" class="input" placeholder="0,00" inputmode="numeric">
+                            <div class="btns-action">
+                                <button class="btn disabled" disabled>
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="input-group">
+                            <span class="currency-ref">R$</span>
+                            <input type="text" class="input" placeholder="0,00">
+                            <div class="btns-action">
+                                <button class="btn disabled" disabled>
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="add-input" id="add-input">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </section>
+                <section class="result">
+                    <span id="result">0,00</span>
+                </section>
+            </main>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
